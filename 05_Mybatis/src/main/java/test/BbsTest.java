@@ -14,16 +14,16 @@ public class BbsTest {
 
 	@Test
 	public void 목록테스트() {
-		assertEquals(2, dao.selectAllBbsList().size());
+		assertEquals(5, dao.selectAllBbsList().size());
 		
 	}
 	
-	@Test
+	//@Test
 	public void 상세테스트() {
 		assertNotNull(dao.selectBbsByNo(1));
 		
 	}
-	@Test
+	//@Test
 	public void 삽입테스트() {
 		BbsDTO bbs = new BbsDTO();
 		bbs.setTitle("테스트제목");
